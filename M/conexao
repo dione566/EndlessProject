@@ -469,7 +469,7 @@ fun_squid
 	fun_v2rayins() {
 		clear
 		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/Niltonjuniornzx/EndlessProject/main/M/v2ray)
+			source <(curl -sL https://raw.githubusercontent.com/dione566/EndlessProject/main/M/v2ray)
 			sleep 6
 		}
 		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
@@ -775,7 +775,7 @@ clear
 					#cat cert.pem key.pem >>/etc/stunnel/stunnel.pem
 					#rm key.pem cert.pem >/dev/null 2>&1
 					sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
-					cd /etc/stunnel && wget https://raw.githubusercontent.com/Niltonjuniornzx/EndlessProject/main/I/stunnel.pem && cd $HOME
+					cd /etc/stunnel && wget https://raw.githubusercontent.com/dione566/EndlessProject/main/I/stunnel.pem && cd $HOME
 				}
 				fun_bar 'ssl_certif'
 				echo -e "\n\033[1;32mINICIANDO O SSL TUNNEL !\033[0m"
@@ -1271,7 +1271,7 @@ echo "Execulte como root"
 			# Adquirindo easy-rsa
 			echo ""
 			fun_dep() {
-				wget -O ~/EasyRSA-3.1.5.tgz "https://github.com/Niltonjuniornzx/EndlessProject/raw/main/I/EasyRSA-3.1.5.tgz"
+				wget -O ~/EasyRSA-3.1.5.tgz "https://github.com/dione566/EndlessProject/raw/main/I/EasyRSA-3.1.5.tgz"
 				tar xzf ~/EasyRSA-3.1.5.tgz -C ~/
 				mv ~/EasyRSA-3.1.5/ /etc/openvpn/
 				mv /etc/openvpn/EasyRSA-3.1.5/ /etc/openvpn/easy-rsa/
