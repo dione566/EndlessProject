@@ -57,7 +57,7 @@ SCOLOR='\033[0m'
 			slowdns
 		} || {
 			cd $HOME
-			wget https://raw.githubusercontent.com/Niltonjuniornzx/EndlessProject/main/S/install -o /dev/null
+			wget https://raw.githubusercontent.com/dione566/EndlessProject/main/S/install -o /dev/null
 			chmod 777 install
 			./install
 		}
